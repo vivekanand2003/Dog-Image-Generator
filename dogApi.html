@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DogPic</title>
+    <style>
+        .main{
+            margin: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+        }
+        .button-section{
+            margin-top:30px;
+            text-align: center; 
+           
+        }
+        button{
+            font-size: 25px; 
+            color: white; 
+            width: 100px; 
+            padding: 5px; 
+            border-radius: 10px; 
+            background-color: cadetblue;
+        }
+    </style>
 </head>
+
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    <h1>Dog Image</h1>
-    <button>show</button>
-    <img id="result" height="400px" width="600px">
+<div class="main">
+    <div>
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+        <h1>Dog Image</h1>
+        <div>
+            <img id="result" height="400px" width="600px">
+        </div>
+        <div class="button-section">
+            <button>show</button>
+        </div>
+    </div>
+</div>
+
     <script src="dogPic.js"></script>
 </body>
+
 </html>
